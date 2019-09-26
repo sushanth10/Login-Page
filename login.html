@@ -1,0 +1,147 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+
+<style>
+.body{
+    position: fixed;
+    width: 100%;
+    top: 20px;
+    right: -40px;
+    bottom: -40px;
+    width: auto;
+    height: auto;
+    background-color: coral;
+    background-size: auto;
+    background-position: center;
+}
+
+.head{
+
+    position: absolute;
+    top: 100%;
+    left: 100%;
+
+
+}
+
+.header div{
+      
+    float:center;
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150px;
+    font-weight: 100;
+
+}
+
+.header div span{
+    color: black;
+
+}
+
+.login{
+    top: 100px;
+    left: 150px;
+    height: 200px;
+    width: 400px;
+    padding: 20px;
+
+}
+
+.login input [type=text]{
+    width: 250px;
+    height: 40px;
+    background: aliceblue;
+    border: black;
+    color: crimson;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    padding: 2px;
+
+}
+
+.login input [type=password]{
+    width:250px;
+    height: 40px;
+    background: aliceblue;
+    border:black;
+    color: brown;
+    font-family: serif;
+    font-size: 15px;
+    padding: 2px;
+
+}
+
+.login input [type=button]{
+     width: 250px;
+     height: 40px;
+     background: brown;
+     border: darkblue;
+     font-size: 18px;
+     font-family: 'Courier New', Courier, monospace;
+     padding: 5px;
+     margin-top: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+</style>
+ </head>
+
+
+
+ <body>
+
+<div class="body"> 
+    <div class="grad"></div>
+<div class="header">
+    Sushanth Bhat
+</div>
+ 
+<form name="login">
+    <div class="login">
+     <input type="text" placeholder="username" name="userid"><br>
+     <input type="password" placeholder="password" name="pswd"><br>
+     <input type="button" onclick="check(this.form)" value="Login"/> 
+    </div>
+</form>
+
+<script lang="javascript">
+function check(form){
+    if(form.userid.value==="Sushanth" && form.pswd.value==="DSCproject"){
+        window.open('https://www.github.com/sushanth10')
+    }
+    else{
+       alert("The username or password is incorrect.")
+    }
+}
+
+</script>
+
+
+</div>
+</body>
+
+ </html>
+
+
+
+
+
+
+
+
+
+
+
+
